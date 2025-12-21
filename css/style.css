@@ -21,6 +21,7 @@ font-family: "Gowun Dodum", sans-serif;
 
 /* Reset */
 * {
+  cursor: none;
   margin: 0;
   padding: 0;
 }
@@ -136,6 +137,57 @@ body {
 .en5 {
   font-family: "Cormorant Infant", serif;
   font-style: italic;
+}
+
+/* 네온 별 커서 */
+.cursor-neon {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+}
+
+.cursor-neon svg {
+    width: 32px;
+    height: 32px;
+    filter: drop-shadow(0 0 5px #EFE4C1) 
+            drop-shadow(0 0 10px #EFE4C1) 
+            drop-shadow(0 0 20px #EFE4C1);
+    animation: neonPulse 2s ease-in-out infinite;
+}
+
+/* 클릭 효과 */
+.cursor-neon.clicking svg {
+    transform: scale(0.8);
+    filter: drop-shadow(0 0 10px #F86634) 
+            drop-shadow(0 0 25px #F86634) 
+            drop-shadow(0 0 40px #F86634);
+}
+
+/* 네온 펄스 애니메이션 */
+@keyframes neonPulse {
+    0%, 100% { 
+        filter: drop-shadow(0 0 5px #EFE4C1) 
+                drop-shadow(0 0 10px #EFE4C1) 
+                drop-shadow(0 0 20px #EFE4C1); 
+    }
+    50% { 
+        filter: drop-shadow(0 0 10px #EFE4C1) 
+                drop-shadow(0 0 20px #EFE4C1) 
+                drop-shadow(0 0 35px #EFE4C1); 
+    }
+}
+
+.neon-trail {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9998;
+    animation: trailFade 0.5s ease-out forwards;
+}
+
+@keyframes trailFade {
+    0% { opacity: 0.8; transform: translate(-50%, -50%) scale(1); }
+    100% { opacity: 0; transform: translate(-50%, -50%) scale(0.3); }
 }
 
 .line {
