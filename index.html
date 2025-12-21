@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ok">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포트폴리오</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="font/font.css" />
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/plugin/scrolla.jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="wrap" id="Home">
+      <section class="main">
+        <div class="line"></div>
+        <p class="en1">2025 PORTFOLIO</p>
+        <nav class="nav_container">
+          <div class="menu_toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="nav_menu">
+            <li class="nav-item"><a href="#Home">Home</a></li>
+            <li class="nav-item"><a href="./me.html">About me</a></li>
+            <li class="nav-item"><a href="#coding">Clone coding</a></li>
+            <li class="nav-item"><a href="#projects">Projects</a></li>
+            <li class="nav-item"><a href="./process.html">Portfolio process</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+          </ul>
+          <!-- //.nav_menu -->
+        </nav>
+        <!-- //.nav_container -->
+        <div class="text_box">
+          <h2 class="en3">
+            <span class="star star-1">✦</span>
+            <span class="magic-text mid">WHERE EVERY</span><br />
+            <span class="magic">
+              <span class="magic-star">
+                <svg viewBox="0 0 512 512">
+                  <path
+                    d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78z"
+                    id="paths"
+                  />
+                </svg>
+              </span>
+              <span class="magic-star">
+                <svg viewBox="0 0 512 512">
+                  <path
+                    d="M512 255.1c0  11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78z"
+                  />
+                </svg>
+              </span>
+              <span class="magic-star">
+                <svg viewBox="0 0 512 512">
+                  <path
+                    d="M512 255.1c0  11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78z"
+                  />
+                </svg>
+              </span>
+              <span class="magic-text"> DETAIL TAKES ROOT</span>
+              <span class="star star-2">★</span>
+              <span class="star star-3">★</span>
+              <span class="star star-4">✦</span>
+              <span class="star star-5">★</span>
+            </span>
+          </h2>
+
+          <span class="en1">I DESIGN FOR PEOPLE, NOT JUST PIXELS</span>
+
+          <div class="scroll">
+            <span>Scroll Dow</span>
+            <div class="scroll_circle"></div>
+          </div>
+        </div>
+        <!-- //.text_box -->
+      </section>
+      <!-- ../main -->
+      <section class="about">
+        <div class="me_box">
+          <div class="stars_top">
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+          </div>
+          <div class="sm_box">
+            <div class="img anim-img">
+              <div class="img_bg"></div>
+              <!-- 실제 이미지 -->
+              <div class="img-reveal"></div>
+              <!-- 마스크 (덮개) -->
+            </div>
+
+            <div class="txt_box">
+              <h2 class="fancyTitle en" data-text="ABOUT ME">ABOUT ME</h2>
+              <p class="tt">
+                안녕하세요. UI / UX 디자이너 윤채원입니다. <br />
+                이름에 담긴 의미처럼, <br />
+                '채(彩)'는 경험에 의미 있는 색을 더하고, <br> '원(瑗)'은 본질을 다듬어 완성도를 높이는 디자이너가 되겠습니다.
+              </p>
+              <!-- Name -->
+              <div class="info_row">
+                <div class="row_header">
+                  <span class="label en1">Name.</span>
+                  <span class="name">Yun Chae Won</span>
+                </div>
+                <!-- Intro -->
+                <div class="intro_list">
+                  <span class="label en1">Intro. </span>
+                  <div class="intro_text">
+                    <p>저는 UX 리서치를 통해 문제의 핵심을 정의하고,</p>
+                    <p>
+                      복잡한 흐름을 정제해 명확하고 밀도 있는 사용자 경험을
+                      설계합니다.
+                    </p>
+                    <p>디자인은 표현보다 구조가 중요하다고 생각합니다.</p>
+                    <p>
+                      퍼블리싱 관점을 함께 고려해, 구현 과정에서도 흔들리지 않는
+                      UI를 완성합니다.
+                    </p>
+                    <p>
+                      작은 디테일까지 다듬어 경험의 밀도를 높이는 것이 저의
+                      디자인 방식입니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- //.txt_box -->
+            <div class="button_wrap">
+              <a href="./me.html" class="btn" target="_blank">
+                <span>Learn More</span>
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- //.me_box -->
+      </section>
+      <!-- //.about -->
+      <section class="skills">
+        <h2 class="skills_title en">Skills</h2>
+
+        <div class="skills_container">
+
+          <!-- HTML -->
+          <div class="skill_card " >
+            <div class="card_inner top">
+              <div class="card_front">
+                <div
+                  class="progress_ring"
+                  style="--progress: 95; --color: #ff6b4a"
+                >
+                  <svg viewBox="0 0 100 100">
+                    <circle class="bg" cx="50" cy="50" r="42" />
+                    <circle class="progress" cx="50" cy="50" r="42" />
+                  </svg>
+                  <span class="skill_name">Html</span>
+                </div>
+              </div>
+              <div class="card_back">
+                <h4>Html</h4>
+                <p class="percent">95%</p>
+                <p class="desc">
+                  시맨틱 마크업을 기반으로 콘텐츠의 <br />
+                  구조를 명확히 설계하며, 접근성과 유지보수를 고려한 HTML 구조
+                  작성이 <br />
+                  가능합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CSS -->
+          <div class="skill_card">
+            <div class="card_inner top">
+              <div class="card_front">
+                <div
+                  class="progress_ring"
+                  style="--progress: 85; --color: #4ecdc4"
+                >
+                  <svg viewBox="0 0 100 100">
+                    <circle class="bg" cx="50" cy="50" r="42" />
+                    <circle class="progress" cx="50" cy="50" r="42" />
+                  </svg>
+                  <span class="skill_name">Css</span>
+                </div>
+              </div>
+              <div class="card_back">
+                <h4>CSS</h4>
+                <p class="percent">85%</p>
+                <p class="desc">
+                  Flex, Grid를 활용한 레이아웃 설계와 <br />
+                  반응형 웹 구현에 익숙하며, 단순 스타일링을 넘어, 사용자 흐름을
+                  고려한 <br />
+                  인터랙션 표현까지 구현합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- JS -->
+          <div class="skill_card">
+            <div class="card_inner top">
+              <div class="card_front">
+                <div
+                  class="progress_ring"
+                  style="--progress: 80; --color: #ffe66d"
+                >
+                  <svg viewBox="0 0 100 100">
+                    <circle class="bg" cx="50" cy="50" r="42" />
+                    <circle class="progress" cx="50" cy="50" r="42" />
+                  </svg>
+                  <span class="skill_name">Js</span>
+                </div>
+              </div>
+              <div class="card_back">
+                <h4>JavaScript</h4>
+                <p class="percent">80%</p>
+                <p class="desc">
+                  인터랙션 구현과 동적 UI 구현을 통해 사용자 경험을 자연스럽게
+                  개선하는 <br />
+                  기능을 구현합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- React -->
+          <div class="skill_card">
+            <div class="card_inner top">
+              <div class="card_front">
+                <div
+                  class="progress_ring"
+                  style="--progress: 70; --color: #61dafb"
+                >
+                  <svg viewBox="0 0 100 100">
+                    <circle class="bg" cx="50" cy="50" r="42" />
+                    <circle class="progress" cx="50" cy="50" r="42" />
+                  </svg>
+                  <span class="skill_name">Re</span>
+                </div>
+              </div>
+              <div class="card_back">
+                <h4>React</h4>
+                <p class="percent">70%</p>
+                <p class="desc">
+                  컴포넌트 구조를 이해하고 간단한 UI <br />
+                  구성과 상태 관리를 경험했습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- jQuery -->
+          <div class="skill_card">
+            <div class="card_inner bottom">
+              <div class="card_front">
+                <div
+                  class="progress_ring"
+                  style="--progress: 80; --color: #78dc35"
+                >
+                  <svg viewBox="0 0 100 100">
+                    <circle class="bg" cx="50" cy="50" r="42" />
+                    <circle class="progress" cx="50" cy="50" r="42" />
+                  </svg>
+                  <span class="skill_name">Jq</span>
+                </div>
+              </div>
+              <div class="card_back">
+                <h4>jQuery</h4>
+                <p class="percent">80%</p>
+                <p class="desc">
+                  웹 환경에서의 인터랙션 구현 경험을 <br />
+                  바탕으로, 이벤트 제어와 애니메이션 <br />
+                  처리에 활용해왔습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Figma -->
+          <div class="skill_card">
+            <div class="card_inner bottom">
+              <div class="card_front">
+                <div
+                  class="progress_ring"
+                  style="--progress: 95; --color: #a259ff"
+                >
+                  <svg viewBox="0 0 100 100">
+                    <circle class="bg" cx="50" cy="50" r="42" />
+                    <circle class="progress" cx="50" cy="50" r="42" />
+                  </svg>
+                  <span class="skill_name">Fima</span>
+                </div>
+              </div>
+              <div class="card_back">
+                <h4>Figma</h4>
+                <p class="percent">95%</p>
+                <p class="desc">
+                  시맨틱 마크업을 기반으로 콘텐츠의 <br />
+                  구조를 명확히 설계하며, 접근성과 유지보수를 고려한 HTML 구조
+                  작성이 <br />
+                  가능합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photoshop -->
+          <div class="skill_card">
+            <div class="card_inner bottom">
+              <div class="card_front">
+                <div
+                  class="progress_ring"
+                  style="--progress: 85; --color: #31a8ff"
+                >
+                  <svg viewBox="0 0 100 100">
+                    <circle class="bg" cx="50" cy="50" r="42" />
+                    <circle class="progress" cx="50" cy="50" r="42" />
+                  </svg>
+                  <span class="skill_name">Ps</span>
+                </div>
+              </div>
+              <div class="card_back">
+                <h4>Photoshop</h4>
+                <p class="percent">85%</p>
+                <p class="desc">
+                  그래픽 제작이 가능하며, 콘텐츠 성격에 맞는 이미지 톤 조절을
+                  통해 전체 UI <br />
+                  분위기를 조율합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Illustrator -->
+          <div class="skill_card">
+            <div class="card_inner bottom">
+              <div class="card_front">
+                <div
+                  class="progress_ring"
+                  style="--progress: 80; --color: #ff9a00"
+                >
+                  <svg viewBox="0 0 100 100">
+                    <circle class="bg" cx="50" cy="50" r="42" />
+                    <circle class="progress" cx="50" cy="50" r="42" />
+                  </svg>
+                  <span class="skill_name">Ai</span>
+                </div>
+              </div>
+              <div class="card_back">
+                <h4>Illustrator</h4>
+                <p class="percent">80%</p>
+                <p class="desc">
+                  UI에 활용되는 그래픽 요소를 제작하며,확장성과 활용도를 고려한
+                  디자인 <br />
+                  작업을 진행합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="texts"></div>
+      <section class="con02" id="coding">
+        <h3 class="en">Clone Coding</h3>
+        <p class="txt_s">
+          Completed as part of a guided UI/UX & publishing class.학원 커리큘럼에
+          따라 진행된 수업형 프로젝트로, 강의를 <br />
+          통해 UX 구조와 퍼블리싱 구현을 함께 학습했습니다
+        </p>
+        <div class="inner">
+          <ul>
+            <li>
+              <a href="./airmax/index.html"target="_blank">
+                <img class="fadeImg" src="img/img1.png" alt="" />
+                <p class="title en4">Air max <span class="dot"></span></p>
+                <p class="color en5">Industry</p>
+              </a>
+            </li>
+            <li>
+              <a href="./clock/index.html" target="_blank">
+                <img class="fadeImg" src="img/img2.png" alt="" />
+                <p class="title en4">Swatch<span class="dot"></span></p>
+                <p class="color en5">Industry</p>
+              </a>
+            </li>
+            <li>
+              <a href="./company/index.html" target="_blank">
+                <img class="fadeImg" src="img/img3.png" alt="" />
+                <p class="title en4">Aesop <span class="dot"></span></p>
+                <p class="color en5">Brand</p>
+              </a>
+            </li>
+            <li>
+              <a href="./cosmetic/index.html" target="_blank">
+                <img class="fadeImg" src="img/img4.png" alt="" />
+                <p class="title en4">Cherie by won <span class="dot"></span></p>
+                <p class="color en5">Brand</p>
+              </a>
+            </li>
+            <li>
+              <a href="./lgcom/index.html" target="_blank">
+                <img class="fadeImg" src="img/img5.png" alt="" />
+                <p class="title en4">Lgcom <span class="dot"></span></p>
+                <p class="color en5">Brand</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="visual en animate" data-animate="motion">
+        <div class="inner">
+          <div class="textBox">
+            <p class="title">My<span class="tit">PROJECTS</span></p>
+            <p class="subTitle">
+              My projects begin with understanding the problem, not just
+              creating visual outcomes. By focusing on user flow and usability,
+              I aim to design and build UI/UX experiences where design and
+              implementation connect seamlessly.
+            </p>
+            <p class="text">
+              사용자 경험을 중심으로디자인과 구현을 함께 고민한
+              프로젝트들입니다.
+            </p>
+          </div>
+          <!-- //.textBox -->
+          <div class="aniBox">
+            <img src="img/spin.png" class="spin" />
+            <img src="img/readMore1.png" class="arrow" />
+          </div>
+          <!-- //.aniBox -->
+        </div>
+      </section>
+      <!-- //.visual -->
+      <section class="work" id="projects">
+        <div class="counter en">
+          <span class="now"></span
+          ><!-- 현재리스트 번호 -->
+          <span class="all en2">/ 4</span>
+          <!-- 전체리스트 번호 -->
+        </div>
+        <ul>
+          <li>
+            <a href="https://www.figma.com/proto/pUtPV8Ys0KwuvpOmpWFJa5/%EA%B0%9C%EC%9D%B8-%EC%9E%91%EC%97%85--%EC%B7%A8%EC%97%85?page-id=182%3A8358&node-id=182-12482&viewport=492%2C92%2C0.19&t=D7kTD2DpDwONgeXH-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=182%3A12482&show-proto-sidebar=1" target="_blank">
+              <div class="num" data-text="1"></div>
+              <!-- html5에 데이터속성은 특정한 데이터를 DOM 요소에 저장해두기 위한 목적으로
+                 'data-'로 시작하며, 저장된 데이터를
+                 getAttribute()매소드를 이용해 속성값을 가져올수 있음 -->
+              <div class="imgBox">
+                <img src="img/work1.png" alt="" />
+              </div>
+              <div class="textBox">
+                <p class="title">Petopia</p>
+                <p class="text en2">UI/UX Design, Personal Project</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./furniture/furniture.html" target="_blank">
+              <div class="num" data-text="2"></div>
+
+              <div class="imgBox">
+                <img src="img/work2.png" alt="" />
+              </div>
+              <div class="textBox">
+                <p class="title">Oak & on </p>
+                <p class="text en2">Responsive Website, Personal Project</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a  href="https://www.figma.com/proto/QDNZNkaUQcJMYB6AT4NLqG/2%EC%A1%B0-%EC%95%84%EC%9D%B4%EB%9F%B0?page-id=2129%3A16705&node-id=2129-40182&viewport=-4828%2C-1299%2C0.15&t=rsBJinrquoOzvmXB-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2129%3A40182"
+                target="_blank">
+              <div class="num" data-text="3"></div>
+
+              <div class="imgBox">
+                <img src="img/work3.png" alt="" />
+              </div>
+              <div class="textBox">
+                <p class="title">I-RUN</p>
+                <p class="text en2">UI/UX Design, Team Project</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a  href="https://goongle-seven.vercel.app"
+                target="_blank">
+              <div class="num" data-text="4"></div>
+
+              <div class="imgBox">
+                <img src="img/work04.png" alt="" />
+              </div>
+              <div class="textBox">
+                <p class="title">GUNGgle</p>
+                <p class="text en2">Responsive Website, Team Project</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- .//work -->
+      <section class="process">
+        <div class="inner">
+          <div class="txt_box">
+            <h3>Portfolio <span> process</span></h3>
+            <p>
+              포트폴리오 제작과정입니다. <br>
+               기획부터 디자인, 구현까지
+              제작하였습니다.
+            </p>
+            <a href="./process.html" class="btn">
+              <span>Learn More</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        <div class="right-section">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"><span>01</span></div>
+                    <div class="timeline-content">
+                        <h4>Brainstorming</h4>
+                        <p>아이디어 정리 및 방향성 설정</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"><span>02</span></div>
+                    <div class="timeline-content">
+                        <h4>Color & Typography</h4>
+                        <p>컬러와 폰트 설정</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"><span>03</span></div>
+                    <div class="timeline-content">
+                        <h4>Wireframe & Disgn</h4>
+                        <p>구조와 레이아웃 설계</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"><span>04</span></div>
+                    <div class="timeline-content">
+                        <h4>Design Rationale</h4>
+                        <p>디자인 설계 설명</p>
+                    </div>
+                </div>
+                 <div class="timeline-item">
+                    <div class="timeline-dot"><span>05</span></div>
+                    <div class="timeline-content">
+                        <h4>Question & answer</h4>
+                        <p>질문을 통해 디자인 흐름과 의도를 검증</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </section>
+      <!-- //.process -->
+      <section class="footer" id="contact">
+        <div class="inner">
+          <div class="box">
+             <div class="marquee">
+<div class="marquee__track">
+<span>ROOTED IN DETAILS, OPEN TO CONVERSATION •</span>
+<span>ROOTED IN DETAILS, OPEN TO CONVERSATION •</span>
+<span>ROOTED IN DETAILS, OPEN TO CONVERSATION •</span>
+<span>ROOTED IN DETAILS, OPEN TO CONVERSATION •</span>
+</div>
+</div>
+            <div class="thanks">
+<strong>Thanks for scrolling all the way. <br>
+Hope this experience stayed with you.<br/></strong>
+제 포트폴리오에 시간을 내주셔서 감사합니다.<br/>
+함께 멋진 경험을 만들어갈 기회를 기다리고 있습니다.
+<div class="bg">
+    <img src="./img/bg.png" alt="">
+</div>
+            </div>
+          </div>
+          <div class="contact_card">
+<h3>Contact</h3>
+<ul>
+<li>
+<span>Email</span>
+dbstnal356@naver.com
+</li>
+<li>
+<span>Phone</span>
++82 10-5624-3262
+</li>
+</ul>
+</div>
+      </section>
+    </div>
+    <!-- //.wrap -->
+  </body>
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YunChaeWon company</title>
+    <!-- Locomotive Scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/common.js" defer></script>
+</head>
+
+<body>
+    <div class="wrap" data-scroll-container>
+        <header id="header">
+            <img src="img/이솝.png" alt="이솝">
+            <!-- <h1><a href="#"><span class="material-symbols-outlined">
+                        draw
+                    </span>Aesop</a></h1> -->
+            <nav class="">
+                <div class="nav_bg"></div>
+                <ul class="gnb">
+                    <li><a href="#">스킨 케어</a>
+                        <ul>
+                            <li><a href="#">클렌저&각질 제거</a></li>
+                            <li><a href="#">트리트먼트 & 마스크</a></li>
+                            <li><a href="#">토너</a></li>
+                          <!--   <li><a href="#">하이드레이터 & 모이스처라이저</a></li> -->
+                            <li><a href="#">립 & 아이</a></li>
+                            <!-- <li><a href="#">쉐이빙</a></li> -->
+                           <!--  <li><a href="#">선 케어</a></li> -->
+                           <!--  <li><a href="#">스킨 케어 키트/a></li> -->
+                        </ul>
+                    </li>
+                    <li><a href="#">핸드 & 바디</a>
+                        <ul>
+                            <li><a href="#">핸드워시 & 밤</a></li>
+                            <li><a href="#">바 솝</a></li>
+                            <li><a href="#">바디 클렌저&스크럽</a></li>
+                            <li><a href="#">바디 밤 & 오일</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">홈</a>
+                        <ul>
+                            <li><a href="#">룸 스프레이</a></li>
+                            <li><a href="#">인센스</a></li>
+                            <li><a href="#">캔들</a></li>
+                            <li><a href="#">탈취제&반려동물</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">헤어</a>
+                        <ul>
+                            <li><a href="#">샴푸 & 컨디셔너</a></li>
+                            <li><a href="#">헤어 트리트먼트</a></li>
+                            <li><a href="#">그루밍</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">향수</a>
+                        <ul>
+                            <li><a href="#">플로럴</a></li>
+                            <li><a href="#">프레쉬</a></li>
+                            <li><a href="#">우디</a></li>
+                            <li><a href="#">오퓰런트</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="r_menu">
+                <div class="sel">
+                    <p><strong>KOR</strong><span class="material-symbols-outlined">
+                            keyboard_arrow_down
+                        </span></p>
+                    <ul>
+                        <li><a href="#"><strong>ENG</strong></a></li>
+                        <li><a href="#"><strong>JPN</strong></a></li>
+                    </ul>
+                </div><!-- //.sel -->
+            </div><!-- //.r_menu -->
+        </header>
+        <main>
+            <div class="custom_cursor">
+    
+            </div><!-- //.custom_cursor -->
+            <section class="main_visual">
+                <div class="main_slide_wrap swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide main1">
+                            <a href="#">
+                                <div class="tit">
+                                    <p> Aesop Brand</p>
+                                    <h2>In harmony<span>with nature,</span>crafted with care</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide main2">
+                            <a href="#">
+                                <div class="tit">
+                                    <p>Eau de Parfum</p>
+                                    <h2><span>흙내음과 꽃향기를 지닌 </span>지속력 </h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide main3">
+                            <a href="#">
+                                <div class="tit">
+                                    <p>Body Cleanser</p>
+                                    <h2>Efficient <span>Won</span> System</h2>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- //.main_slide_wrap -->
+                <!-- 커스텀 페이지네이션 -->
+                <div class="vertical-pagination">
+                    <!-- 현재 슬라이드 번호 -->
+                    <div class="num">
+                        <span class="swiper-pagination-current">01</span> / 03
+                    </div><!-- num -->
+    
+                    <!-- 중앙 세로라인 (진행도 표시) -->
+                    <div class="swiper-pagination-line">
+                        <!-- 실제로 채워질 부분 -->
+                        <div class="swiper-pagination-line-fill"></div>
+                    </div>
+                    <!-- 위/아래 화살표(버튼) -->
+                    <div class="swiper-pagination-buttons">
+                        <span class="prev">▲</span>
+                        <span class="next">▼</span>
+                    </div>
+                </div><!-- //.vertical-pagination -->
+            </section><!-- //.main_visual -->
+            <section class="txt_area">
+                <h2>
+                    <strong class="tit"><span>깊이</span>있는 <span>아름다움은,</span>섬세한 <span>일상</span>에서 시작된다</strong>
+                    <b class="tit"><span>감각</span>은 기억을 남기고 <span>이솝은 </span>감각을 만든다</b>
+                    <em class="tit"><span>Aesop </span> Brand</em>
+                </h2>
+            </section><!-- //.txt_area -->
+            <section class="vision">
+                <div class="sticky">
+                    <div class="sticky_title">
+                        <div class="bg">Aesop</div>
+                        <ul class='list'>
+                            <li>
+                                우리는 창의적 사고와 실무 경험을 통해, 더 나은 사용자 경험을 디자인합니다.
+                            </li>
+                            <li>
+                                
+"Fragrance, subtle yet unforgettable"
+은은하지만 잊히지 않는 향
+                            </li>
+                        </ul>
+    
+                    </div>
+                    <div class="s_tit">
+                        <h2 class="">The Aesop Way</h2>
+                        <p>깊이 있는 사고와 세심함으로 완성된 브랜드 경험<br>
+                            유행이 아닌 사유에서 출발합니다.
+                        </p>
+                    </div>
+                    <div class="sticky_con">
+                        <ul class="card_frame">
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <div class="icon"></div>
+                                    <h3>지성</h3>
+                                    <p>"We believe in thoughtful design, not trends."<br>우리는 유행이 아닌, 사려 깊은 디자인을 믿습니다</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <div class="icon"></div>
+                                    <h3>자연과 과학의 균형</h3>
+                                    <p>식물 기반 성분과 과학적인 접근을 조화롭게 결합함으로써,<br>피부에 순하면서도 기능적인 제품을 만듭니다.</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <div class="icon"></div>
+                                    <h3>미니멀한 아름다움</h3>
+                                    <p>언제나 절제된 미니멀리즘을 지향해<br> 하나로 어우러지는 고요하고 우아한 미학을 담고있다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section><!-- //.vision -->
+            <section class="special_product">
+                <div class="s_tit">
+                    <h2 class="">A Ritual of Care</h2>
+                    <p> 정제된 식물 추출물이  <br>
+                        지친 손에 깊은 수분과 편안함을 선사합니다.
+                    </p>
+                </div><!-- //.s_tit -->
+                <ul>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img/p1.png" alt=""></div>
+                        <div class="name">
+                            <strong>너처 바 솝</strong>
+                            <p>시어버터를 함유해 수분 손실을 막아주며 자극이 적어 대부분 피부 타입에 적합한, 목욕이나 세안때 사용하는 비누</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img/p2.png" alt=""></div>
+                        <div class="name">
+                            <strong>코리안더 씨드 바디 클렌저저</strong>
+                            <p>스파이시, 우디, 따뜻한 향</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img/p3.png" alt=""></div>
+                        <div class="name">
+                            <strong>시트러스 멜란지 바디 클렌저</strong>
+                            <p>시트러스, 상쾌한 향</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img/p4.png" alt=""></div>
+                        <div class="name">
+                            <strong>에이 로즈 바이 애니 아더 네임 바디 클렌저저</strong>
+                            <p>플로럴, 스파이시, 따뜻한 향</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img/p5.png" alt=""></div>
+                        <div class="name">
+                            <strong>레저렉션 아로마틱 핸드 밤</strong>
+                            <p>시트러스, 우디, 허브 향</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img/p6.png" alt=""></div>
+                        <div class="name">
+                            <strong>레버런스 아로마틱 핸드워시시</strong>
+                            <p>부드럽게 손을 세정하고 각질을 씻어주는 고운 입자의 핸드 젤</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img/p7.png" alt=""></div>
+                        <div class="name">
+                            <strong>레저렉션 아로마틱 핸드 워시</strong>
+                            <p>부드러운 손 세정을 선사하는 투명하고 거품이 적은 클렌징 젤</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img/p8.png" alt=""></div>
+                        <div class="name">
+                            <strong>엘레오스 아로마틱 핸드 밤</strong>
+                            <p>허브, 우디, 스파이시</p>
+                        </div>
+                    </li>
+                </ul>
+            </section><!-- //.special_product -->
+            <section class="business">
+                <div class="s_tit">
+                    <h2 class="">OUR PHILOSOPHY</h2>
+                    <p>독창성과 세심함을 담은 이솝만의 철학을 이어갑니다.
+                    </p>
+                    <div class="btn">
+                        <span class="material-symbols-outlined prev">
+                            west
+                        </span>
+                        <span class="material-symbols-outlined next">
+                            east
+                        </span>
+                    </div>
+                </div><!-- //.s_tit -->
+    
+                <div class="slide swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b1.png" alt=""></div>
+                                <div class="txt_box">
+                                    <img src="img/business_logo01.webp" alt="서브로고">
+                                    <span>Aesop</span>
+                                <h3>Intelligent formulations, anchored in nature.</h3>
+                                <p>Each product is crafted with meticulous care, using the finest botanical ingredients and scientific rigor.</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#BotanicalScience</li>
+                                            <li>#SkincareRitual</li>
+                                            <li>#Minimalism</li>
+                                            <li>#NatureInspired</li>
+                                            <li>#PureRefinement</li>
+                                            <li>#SustainableBeauty</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b2.png" alt=""></div>
+                                <div class="txt_box">
+                                    <img src="img/business_logo01.webp" alt="서브로고">
+                                   <span>Aesop Skincare</span>
+                                   <h3>Purity, Bottled.</h3>
+                                   <p>A collection of formulations devoted to restoring balance and clarity to the skin.</p>
+                                   <div class="tag">
+                                        <ul>
+                                            <li>#BotanicalBalance</li>
+                                        <li>#SkinClarity</li>
+                                        <li>#GentleCare</li>
+                                        <li>#MinimalSkincare</li>
+                                        <li>#NaturalFormulations</li>
+                                        <li>#PureRefinement</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b3.png" alt=""></div>
+                                <div class="txt_box">
+                                    <img src="img/business_logo01.webp" alt="서브로고">
+                                    <span>Aesop Handcare</span>
+                                <h3>Care in Every Gesture.</h3>
+                                <p>Thoughtful blends crafted to nourish, soften, and comfort the hands throughout the day.</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#NourishEveryTouch</li>
+                                            <li>#DailyRitual</li>
+                                            <li>#HandCareEssentials</li>
+                                            <li>#BotanicalTouch</li>
+                                            <li>#SoftnessPreserved</li>
+                                            <li>#ElegantGestures</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b4.png" alt=""></div>
+                                <div class="txt_box">
+                                    <img src="img/business_logo01.webp" alt="서브로고">
+                                    <span>Aesop Body</span>
+                                <h3>Quiet Rituals of Care.</h3>
+                                <p>Botanical ingredients and scientific precision come together for daily replenishment.
+
+                                </p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#BodyRitual</li>
+                                        <li>#BotanicalScience</li>
+                                        <li>#SkinWellness</li>
+                                        <li>#SustainableCare</li>
+                                        <li>#NatureInEveryDrop</li>
+                                        <li>#DailyReplenishment</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b5.png" alt=""></div>
+                                <div class="txt_box">
+                                    <img src="img/business_logo01.webp" alt="서브로고">
+                                    <span> Aesop Hair</span>
+                                <h3>Strength in Simplicity.</h3>
+                                <p>Essential formulations that cleanse, fortify, and respect the natural character of hair.
+
+                                </p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#HairIntegrity</li>
+                                            <li>#BotanicalFortitude</li>
+                                            <li>#MinimalHairCare</li>
+                                            <li>#StrengthAndSoftness</li>
+                                            <li>#NatureInfused</li>
+                                            <li>#BotanicalVitality</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section><!-- //.business -->
+            <section class="vid">
+                <div class="s_tit">
+                    <h2 class="">NCultivate Depth.</h2>
+                    <p>True beauty flourishes from thoughtful care and timeless wisdom.</p>
+                </div><!-- //.s_tit -->
+                <figure class="vid_box">
+                    <video src="img/vid1.mp4" loop autoplay muted playsinline></video>
+                </figure><!-- //.vid_box -->
+            </section><!-- //.vid -->
+            <section class="trust">
+                <div class="s_tit">
+                    <h2>Our Commitment</h2>
+                    <p>In stillness, wisdom blooms<br>
+                        고요 속에서 지혜는 피어난다</p>
+                </div>
+                <div class="con">
+                    <ul>
+                        <li class="sl1"><a href="#">
+                                <h3>Thoughtfulness </h3>
+                                <p>제품 하나하나에 깊은 고민과 배려를 담는다.</p>
+                            </a></li>
+                        <li class="sl2"><a href="#">
+                                <h3>Integrity</h3>
+                                <p>과장 없이, 정직하게, 진짜 좋은 성분과 효능만을 추구한다.</p>
+                            </a></li>
+                        <li class="sl3"><a href="#">
+                                <h3>Sensory Experience</h3>
+                                <p>향, 질감, 디자인까지 오감을 만족시키는 섬세한 경험을 만든다.
+                                </p>
+                            </a></li>
+                    </ul>
+                </div>
+         </section><!-- //.trust -->
+         <section class="news">
+            <div class="s_tit">
+                <h2>Thoughtful Beauty</h2>
+                <p>깊이 있는 사유와 자연의 조화로 탄생한,<br>
+                    삶을 위한 섬세한 미학</p>
+                <a href="#" class="more">View More &gt;</a>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="con swiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><a href="#">
+                            <div class="img_box"><img src="img/t1.png" alt=""></div>
+                            <p class="txt">
+                                자연과 과학이 속삭이는 조화
+                            </p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#">
+                            <div class="img_box"><img src="img/t2.png" alt=""></div>
+                            <p class="txt">
+                                섬세하게 빚은 단순함
+                            </p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#">
+                            <div class="img_box"><img src="img/t3.png" alt=""></div>
+                            <p class="txt">
+                                본연이 빚어낸 아름다움
+                            </p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#">
+                            <div class="img_box"><img src="img/t4.png" alt=""></div>
+                            <p class="txt">
+                                자연이 건네는 가장 순수한 선물
+                            </p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#">
+                            <div class="img_box"><img src="img/t5.png" alt=""></div>
+                            <p class="txt">
+                                매 순간을 섬세하게 완성하다
+                            </p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#">
+                            <div class="img_box"><img src="img/t6.png" alt=""></div>
+                            <p class="txt">
+                                피부에 닿는 지성의 아름다움
+                            </p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#">
+                            <div class="img_box"><img src="img/t7.png" alt=""></div>
+                            <p class="txt">
+                                진정성을 담은 작은 사치
+                            </p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide"><a href="#">
+                            <div class="img_box"><img src="img/t8.png" alt=""></div>
+                            <p class="txt">
+                                일상을 빛내는 정성
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+         </section><!-- //.news -->
+        </main>
+        <footer>
+            <h3>Contact Us</h3>
+            <p>‘Music is the language of the spirit.’<br>
+                <span>Kahlil Gibran </span></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
