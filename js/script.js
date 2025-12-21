@@ -1,10 +1,9 @@
-// ⭐ 커서 코드를 DOMContentLoaded 안에 넣기
+
 document.addEventListener('DOMContentLoaded', function() {
     
     // 커서 요소 가져오기
     const cursor = document.getElementById('cursor');
     
-    // ⭐ cursor가 존재하는지 확인
     if (cursor) {
         // 마우스 움직임 따라가기
         document.addEventListener('mousemove', (e) => {
