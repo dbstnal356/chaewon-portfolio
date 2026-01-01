@@ -1043,6 +1043,7 @@ body {
 
 /*  ===== 나의 강점  ====== */
 section.con3 {
+  
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -1270,3 +1271,15 @@ section.con3 .inner {
             position: relative;
             z-index: 1;
         }
+
+
+
+ @media (max-width:1680px){
+.strength-header {
+ 
+
+}
+.strength-list {
+  margin-left: 150px;
+}
+ }

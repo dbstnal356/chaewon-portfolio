@@ -1131,3 +1131,55 @@ left: 610px; }  /* Hobby */
  
 }
 
+
+@media (max-width:1680px){
+  .con3{
+    max-width: 1500px;
+  }
+  .description-item:nth-child(5) {
+    margin-top: 130px;
+}
+}
+
+
+@media (max-width:1670px){
+
+    .description-item:nth-child(5) {
+    margin-top: 100px;
+}
+}
+@media (max-width:1650px){
+
+    .description-item:nth-child(5) {
+    margin-top: 100px;
+}
+.description-item::after {
+   left: 36px;
+ 
+}
+.description-item::before {
+   left: -20px;
+}
+.description-item2:nth-child(4)
+ { top: 1990px;}  
+
+
+}
+
+@media (max-width:1630px){
+  .description-item:nth-child(3) {
+  margin-top: 140px;
+}
+.description-item:nth-child(4) {
+  margin-top: 160px;
+}
+     .description-item:nth-child(5) {
+    margin-top: 100px;
+}
+.description-item2:nth-child(4)
+ { top: 1940px;
+left: 610px; }  
+
+
+}
+

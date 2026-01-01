@@ -1647,3 +1647,25 @@ display:block;
 font-size:14px;
 opacity:.7;
 }
+
+
+/* 1750 --- 1700 */
+
+@media (max-width: 1750px) {
+  .thanks {
+    width: calc(100% - 5px);
+    
+  }
+  
+  .marquee {
+    max-width: 900px;
+  }
+
+}
+
+@media (max-width: 1720px) {
+
+    .marquee {
+    max-width: 850px;
+  }
+}
