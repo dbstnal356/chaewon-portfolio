@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "tway_sky";
+  src: url("../font/tway_sky.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AbhayaLibre";
+  src: url("../font/AbhayaLibre-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AbhayaLibre";
+  src: url("../font/AbhayaLibre-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
